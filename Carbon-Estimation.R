@@ -16,8 +16,8 @@ tmap_mode("plot")
 
 
 # Load estimated and reference carbon stock rasters
-estimated <- rast("Estimated_Carbon_Stock_Sentinel2.tif")
-reference <- rast("Reference_Carbon_Stock.tif")
+estimated <- rast("Estimated_Carbon_Stock_Sentinel2-New.tif")
+reference <- rast("Reference_Carbon_Stock-New.tif")
 
 # Create side-by-side maps
 tm1 <- tm_shape(estimated) + 
