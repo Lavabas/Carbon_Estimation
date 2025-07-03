@@ -64,6 +64,8 @@ var regressionCoefficients = ee.Array(regressionModel.get('coefficients')).proje
 // which is required for simpler access to individual coefficients.
 
 var estimatedCarbon = predictorVariables.multiply(ee.Image.constant(regressionCoefficients)).reduce(ee.Reducer.sum()).rename('Estimated Carbon Stock');
+// Clamp negative values to zero
+var estimatedCarbon = estimatedCarbon.max(0);
 Map.addLayer(estimatedCarbon.clip(studyArea), {}, 'Estimated Carbon Stock from Sentinel-2', false);
 
 
