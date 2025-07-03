@@ -7,7 +7,8 @@ How can remote sensing and machine learning help in estimating carbon stock over
 Overview
 This project demonstrates how to estimate aboveground biomass carbon stock in the Eastern Province of Sri Lanka using Sentinel-2 imagery, biomass data, and a Random Forest regression model in Google Earth Engine (GEE). The outputs are exported and visualized in R Studio with high-resolution side-by-side maps.
 
-![carbon_stock_comparison](https://github.com/user-attachments/assets/f9b31fbd-7294-47c4-adda-411d737b923c)
+![carbon_stock_comparison_map](https://github.com/user-attachments/assets/1d7904f3-6e85-4eda-b484-82fa7debb414)
+
 
 
 🧮 Accuracy Evaluation
